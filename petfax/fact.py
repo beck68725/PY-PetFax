@@ -1,4 +1,3 @@
-from crypt import methods
 from flask import (Blueprint, render_template, request, redirect)
 from . import models
 
@@ -24,4 +23,4 @@ def index():
 
 @bp.route('/new')
 def new():
-    return render_template('facts/index.html')
+    return render_template('facts/new.html')

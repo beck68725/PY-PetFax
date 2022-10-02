@@ -1,8 +1,9 @@
-import json
+
 from flask import (Blueprint, render_template)
-bp = Blueprint('pet', __name__, url_prefix="/pets")
+import json
 
 pets = json.load(open('pets.json'))
+bp = Blueprint('pet', __name__, url_prefix="/pets")
 
 
 @bp.route('/')
